@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+main{
+    display: flex;
+    width: 100%;
+   height: 50vh;
+   /* align-items: center; */
+   justify-content: center;
+   margin-top: 7rem;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    padding: 0 10rem;
+    height: 125px;
+    box-shadow: 0 1px 3px -1px black;
+}
+nav{
+    /* flex-basis: 65%; */
+    margin-left: 56px;
+}
+header .logo{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+nav ul li{
+    padding: 5px 10px;
+    font-size: 1.2em;
+    color: hsl(219, 9%, 45%);
+    cursor: pointer;
+}
+.avatar-cart{
+    flex-basis: 60%;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    width: 200px;
+}
+.avatar-cart .cart-logo{
+    margin: 0 65px;
+    cursor: pointer;
+}
+.avatar-cart .avatar img{
+    width: 50%;
+    cursor: pointer;
+}
+.avatar-cart .avatar img:hover{
+   outline: 1px solid orange;
+   border-radius: 50%;
+}
+
+.cart-basket{
+    width: 320px;
+    /* max-width: 320px; */
+    min-height: 200px;
+    box-shadow: 0px 0px 10px 1px black;
+    position: absolute;
+    top: 80px;
+    right: 68px;
+    border-radius: 10px;
+    background-color: white;
+    display: block;
+    z-index: 0;
+}
+.cart-basket-heading{
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+.cart-basket-heading h2{
+    margin: 10px 15px;
+}
+.cart-basket .basket{
+    padding: 10px;
+}
+.cart-basket .basket p{
+    font-weight: 600;
+    color: rgba(0,0,0,.8);
+}
+
+.filledcart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    background-color: white;
+
+}
+.forcartImg{
+    width: 50px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.filledCart #delete-button{
+    width: 20px;
+}
+.checkout-btn{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 5px;
+    color: white;
+    flex-basis: 100%;
+}
+#myltiply-btn{
+    width: 15px;
+}
+.left-portions{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 85%;
+}
+.choose-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+
+}
+.choose-image div{
+    width: 20%;
+    margin: 10px 10px;
+}
+.choose-image img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.choose-image img:active{
+    background-color: orange;
+}
+.product-image{
+    width: 60%;
+    /* border: 1px solid black; */
+}
+.product-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right-portions{
+     width: 50%;
+     display: grid;
+     align-content: center;
+}
+.company-name{
+    font-size: .8em;
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+}
+.product-title{
+    margin: 20px 0px;
+    font-size: 2.5rem;
+}
+.description{
+    width: 400px;
+    margin: 10px 0px;
+    word-spacing: 5px;
+    font-size: 1.1em;
+    color: hsl(219, 9%, 45%);
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 10px 0px;
+}
+.current-price{
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.discount{
+    color: hsl(26, 100%, 55%);
+    font-size: small;
+    font-weight: 600;
+}
+.previous-price{
+    text-decoration: line-through;
+    color: hsl(219, 9%, 45%);
+    margin: 10px 0px;
+}
+.choose-amount{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 10px 0px;
+}
+.amount-button{
+    width: 120px;
+    /* outline: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.minus{
+    padding: 5px;
+    color: hsl(26, 100%, 55%);
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.plus{
+    padding: 5px;
+    color: hsl(26, 100%, 55%);
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.amount{
+    font-weight: 600;
+    flex-basis: 5%;
+    /* width: 25px; */
+}
+.cart{
+    position: relative;
+}
+.cart img{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.add-to-cart{
+    padding: 18px 45px;
+    background-color: hsl(26, 100%, 55%);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: 250px;
+}
+
+
+#lightBox{
+    width: 60%;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    margin-top: -4%;
+    /* position: relative; */
+}
+#lightBox .choose-image{
+    width: 500px;
+    margin: 0 auto;
+}
+#lightBox .choose-image div{
+    width: 16%;
+}
+#lightBox .product-image{
+    margin: 0 auto;
+}
+#lightBox .slider{
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 45%;
+    width: 67%;
+
+}
+#lightBox .slider img{
+  /* background-color: white; */
+}
+.slider-icon{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corss-icon{
+    text-align:  right;
+    margin-right: 20%;
+    cursor: pointer;
+    /* margin-right: ; */
+}
+/* #cross{
+    background-color: blue;
+} */
+/* samll devices */
+
+.wrapper{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    background-color: rgba(0,0,0,.3);
+}
+
+@media (max-width: 996px){
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        margin: 0px 15px;
+    }
+    nav {
+        flex-basis: 0%;
+        margin-left: 0px;
+    }
+    .right-portions {
+        width: 58%;
+    }
+    .description {
+        width: 347px;
+    }
+    .choose-image div {
+        width: 10%;
+        margin: 10px 10px;
+    }
+    .choose-image img {
+        width: 100%;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    #lightBox .slider {
+        width: 72%;
+    }
+    .slider-icon {
+        background-color: white;
+        width: 50px;
+        height: 50px;
+    }
+    #lightBox .choose-image {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
